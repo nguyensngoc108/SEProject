@@ -138,85 +138,81 @@ nav a:hover::before{
 }
 
 .sliderButton{
-
+    border: none;
     position: absolute;
     top: 30%;
     right: 10%;
     font-size: 20px;
     font-weight: 900;
-    text-align: right;
-    color: white;
+    text-align: center;
+    color: #fff;
     cursor: pointer;
-    background-color: black;
-   
+    background: #ff523b;
+    border-radius: 40px;
+    padding: 10px;
+    width: 200px;
+    transition: all 0.5s;
+    margin: 5px;   
 }
 
-.sliderButton:hover{
-    background-color: white;
-    color: black;
+
+.sliderButton span{
+    cursor: pointer;
+    display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-.moveButtonRight{
-    width: 100px;
-    height: 100px;
+.sliderButton span:after{
+    content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.sliderButton:hover span{
+    padding-right: 25px;
+}
+
+.sliderButton:hover span:after{
+    opacity: 1;
+    right: 0;
+}
+
+.menu-icon{
+    width: 50px;
+    padding-top: 10px;
+    display: none;
+}
+
+
+@media screen and (max-width:800px) {
+   .navUl{
     position: absolute;
-    top: 50%;
-    right: 5%;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: right;
-    color: white;
+    top: 70px;
+    left: 0;
+    background: #333;
+    width: 100%;
+    overflow: hidden;
+    transition: max-height 0.5s;
+   }
+   .navUl ul li{
+    display: block;
+    margin-right: 50px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+   }
+   .navUl ul li a{
+    color: #fff;
+
+   }
+   .menu-icon{
+    display: block;
     cursor: pointer;
-    background-color: black;
-   
-}
 
-.moveButtonRight:hover{
-    background-color: white;
-    color: black;
-}
-
-.moveButtonLeft{
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    top: 50%;
-    left: 5%;
-    font-size: 30px;
-    font-weight: 900;
-    text-align: right;
-    color: white;
-    cursor: pointer;
-    background-color: black;
-   
-}
-
-.moveButtonLeft:hover{
-    background-color: white;
-    color: black;
-}
-
-
-
-
-@media screen and (max-width:480px) {
-    nav{
-        background-color: red;
-
-    }
-    .search{
-        display:none;
-
-    }
-    .navBottom{
-        flex-wrap: wrap;
-    }
-    .menuItem{
-        margin:20px;
-        font-weight: 700;
-        font-size: 20px;
-    }
-    
+   }
 }
 
 /* Categories section */
@@ -516,7 +512,7 @@ footer{
     margin-bottom: 30px;
     font-size: 13px;
     position:relative;
-    color:#555;
+    color:rgb(2, 2, 2);
     line-height: 20px;
     cursor: pointer;
 }
@@ -527,3 +523,43 @@ footer{
     cursor: pointer;
 }
 
+
+/* Items.html */
+
+Items h2{
+    text-align: center;
+    margin-bottom: 0px;
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+
+
+select{
+    width: 15%;
+    height: 30px;
+    border: 1px solid #b6b3b3;
+    border-radius: 5px;
+    margin-left: 10px;
+    padding: 5px;
+    margin-bottom: 50px;
+    cursor: pointer;
+}
+
+#cart-items{
+    width: 30px;
+    height: 30px;
+    border: 1px solid #b6b3b3;
+    border-radius: 5px;
+    padding: 5px;
+    margin-bottom: 50px;
+    cursor: pointer;
+
+}
+
+.price-cart{
+    display: inline-block;
+    margin-left: 10px;
+    font-size: 13px;
+    color: #000;
+}
