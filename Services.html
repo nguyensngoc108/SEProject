@@ -7,57 +7,112 @@
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css">
         <title>Services</title>
-        <script src="index.js" crossorigin="anonymous"></script>
+        <script src="index.js"></script>
+        
     </head>
+
     <body>
-        <div class="container">
-            <div class="navbar">
-                <div class="logo">
-                    <img src="images/logo.png" width="125px">
+        <nav>
+            <div class="navTop">
+               <div class="navItem">
+                <a href="/index.html">
+                <img src="images/logo.png" width="70px">
+                </a>
+               </div>
+               <div class="navItem">
+                <div class="Search">
+                    <input type="text" placeholder="Search" class="searchInput">
+                    <img src="/images/Search.png" class="searchIcon" width="25px" height="25px">
                 </div>
-                <nav>
-                    <ul id="MenuItems">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="Services.html">Services</a></li>
-                        <li><a href="About.html">About</a></li>
-                        <li><a href="Contact.html">Contact</a></li>
-                        <li><a href="Account.html">Account</a></li>
-                    </ul>
-                </nav>
-                <a href="Cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
-                <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+               </div>
+               <div class="navItem">
+                <a class="Cart" href="Cart.html"><img src="images/Cart.png" width="40px" height="40px"></a>
+
+               </div>
+            </div>
+            <div class="navBottom">
+             <ul class="navUl">
+                <li><a class="menuItem">Home</a></li>
+                <li><a class="menuItem">Services</a></li>
+                <li><a class="menuItem">About</a></li>
+                <li><a class="menuItem">Contact</a></li>
+             </ul>
+            </div>
+        </nav>
+        <div class="small-container-1">
+            <h2>All Services</h2>
+            <div class="row">
+                <div class="col-4-md1">
+                    <img src="/images/car-engine-repair-and-replacement.jpeg" >
+                    <h4>Car Maintenance Services</h4>
+                    <p>Engine repair is the process of repairing or replacing the engine of a motor vehicle. The engine is the most expensive and important component of a motor vehicle, and the repair cost can be considerable.</p>
+                </div>
+                <div class="col-4-md1">
+                    <img src="/images/car-engine-repair-and-replacement.jpeg" > 
+                    <h4>Car Accessories</h4>
+                    <p>Engine repair is the process of repairing or replacing the engine of a motor vehicle. The engine is the most expensive and important component of a motor vehicle, and the repair cost can be considerable.</p>
+                </div>
             </div>
         </div>
-        <!-- Single Item -->
-        <div class="small-container single-product">
-            <div class="row">
-                <div class="col-2">
-                    <img src="images/1.jpg" width="100%" id="ProductImg">
-                    <div class="small-img-row">
-                        <div class="small-img-col">
-                            <img src="images/1.jpg" width="100%" class="small-img">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="images/2.jpg" width="100%" class="small-img">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="images/3.jpg" width="100%" class="small-img">
-                        </div>
-                        <div class="small-img-col">
-                            <img src="images/4.jpg" width="100%" class="small-img">
-                        </div>
+                
+
+        <footer>
+            <div class="footerLeft">
+                <div class="footerMenu">
+                    <img src="images/logo.png" width="50px">
+                    <a><br>Industrial U20 Garage is a company<br>  that provides services for<br>  motor servicing at home. We have a team of <br> experienced mechanics who are ready to serve you.</a>
+                    
+                </div>
+                <div class="footerMenu">
+                    <h1 class="fmenuTitle">About Us</h1>
+                    <ul class="fmenuList">
+                        <li class="flistItem">
+                            <h3 class="flistTitle">ADDRESS</h3>
+                                <a class="flistLink">No. 1, Jalan 1/1, Taman Industri U20,<br> 40150 Shah Alam, Selangor</a>
+                        </li>
+                        <li class="flistItem">
+                            <h3 class="flistTitle">PHONE</h3>
+                                <a href="tel:+84-91-920-8388" id="tel" class="flistLink">+84-91-920-8388</a>
+                        </li>
+                    </ul>
+                </div>
+               
+                <div class="footerMenu">
+                    <h1 class="fmenuTitle">Featured</h1>
+                    <ul class="fmenuList">
+                        <li class="flistItem">Home</li>
+                        <li class="flistItem">Services</li>
+                        <li class="flistItem">About</li>
+                        <li class="flistItem">Contact</li>
+                        
+                    </ul>
+                </div>
+
+            </div>
+            <div class="footerRight">
+                <div class="footerRightMenu">
+                    <h1 class="fmenuTitle">Get our news</h1>
+                    <div class="fMail">
+                        <input type = "text" placeholder="Enter your email" class="fMailInput">
+                        <button class="fButton">Join</button>
                     </div>
                 </div>
-                <div class="col-2">
-                    <p>Home / T-Shirt</p>
-                    <h1>Red Printed T-Shirt by HRX</h1>
-                    <h4>$50.00</h4>
-                    <select>
-                        <option>Select Size</option>
-                        <option>XXL</option>
-                        <option>XL</option>
-                        <option>Large</option>
-                        <option>Medium</option>
-                        <option>Small</option>
-                    </select>
+                <div class="footerRightMenu">
+                     <h1 class="fmenuTitle">Follow Us</h1>
+                     <div class="fIcons">
+                        <a href="https://www.facebook.com/profile.php?id=100086304619656&notif_id=1664959062473953&notif_t=profile_plus_admin_invite&ref=notif"><img src="/images/Facebook.png" alt="" class="fIcon" width="40px" height="40px"></a>
+                        <img src="/images/Ins.png" alt="" class="fIcon" width="40px" height="40px">
+                     </div>
+                </div>
+                <div class="footerRightMenu">
+                    <span class="copyright" >© 2021 Industrial U20 Garage. All rights reserved.</span>
+                </div>
+
+            </div>
+        </footer>
+        
+        
+    </body>
+</html>
