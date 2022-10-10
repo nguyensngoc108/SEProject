@@ -88,8 +88,10 @@ nav a:hover::before{
     display:flex;
     align-items: center;
     justify-content: center;
+    padding: 20px 0px;
     
 }
+
 
 
 
@@ -188,32 +190,6 @@ nav a:hover::before{
 }
 
 
-@media screen and (max-width:800px) {
-   .navUl{
-    position: absolute;
-    top: 70px;
-    left: 0;
-    background: #333;
-    width: 100%;
-    overflow: hidden;
-    transition: max-height 0.5s;
-   }
-   .navUl ul li{
-    display: block;
-    margin-right: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-   }
-   .navUl ul li a{
-    color: #fff;
-
-   }
-   .menu-icon{
-    display: block;
-    cursor: pointer;
-
-   }
-}
 
 /* Categories section */
 .categories{
@@ -307,7 +283,33 @@ h4{
 }
 
 
-
+@media screen and (max-width:800px) {
+    .navUl{
+     position: absolute;
+     top: 70px;
+     left: 0;
+     background: #333;
+     width: 100%;
+     overflow: hidden;
+     transition: max-height 0.5s;
+    }
+    .navUl ul li{
+     display: block;
+     margin-right: 50px;
+     margin-top: 10px;
+     margin-bottom: 10px;
+    }
+    .navUl ul li a{
+     color: #fff;
+ 
+    }
+    .menu-icon{
+     display: block;
+     cursor: pointer;
+ 
+    }
+ }
+ 
 
 
 /* Footer */
@@ -515,6 +517,12 @@ footer{
     color:rgb(2, 2, 2);
     line-height: 20px;
     cursor: pointer;
+   
+}
+
+.col-4-md1 a{
+    text-decoration: none;
+    color: black;
 }
 .col-4-md1 img{
     width: 100%;
